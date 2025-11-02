@@ -1,0 +1,152 @@
+* {
+  border: none;
+  border-radius: 4px;
+  min-height: 0;
+  min-width: 0;
+  font-family: Lexend, "JetBrainsMono Nerd Font";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background-color: transparent; /* Fundo da barra transparente */
+}
+
+#workspaces {
+  margin: 0.4rem 0.25rem;
+  background-color: rgba(40, 42, 54, 0.80); /* Botões com transparência */
+}
+
+#workspaces button {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  color: #DFDFDF;
+}
+
+#workspaces button:hover {
+  background-color: rgba(68, 71, 90, 0.80); /* Hover com transparência */
+  color: #DFDFDF;
+}
+
+#workspaces button.active {
+  background-color: rgb(112, 146, 250);
+  color: #DFDFDF;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  background-color: rgba(255, 85, 85, 0.80); /* Botão urgente com transparência */
+  color: #DFDFDF;
+}
+
+#custom-gpu_temp,
+#custom-cpu_temp,
+#clock,
+#pulseaudio,
+#mpris,
+#custom-logo,
+#cpu,
+#tray,
+#memory,
+#wlr-taskbar,
+#window {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+}
+
+#custom-gpu_temp {
+  color: #e0af68;
+}
+
+#custom-cpu_temp {
+  color: #f75f5f;
+}
+
+#custom-search_bar {
+  color: #676af0;
+}
+
+#mpris {
+  color: #e46b47;
+}
+
+#custom-wallpaper,
+#custom-search_bar,
+#custom-power,
+#custom-notification {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+  padding-right: 10px;
+}
+
+#custom-search_bar {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+  padding-right: 13px;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #6272a4;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: #ffb86c;
+}
+
+#memory {
+  color: #8be9fd;
+}
+
+#clock {
+  color: #bd93f9;
+}
+
+#clock.simpleclock {
+  color: #50fa7b;
+}
+
+#window {
+  color: #DFDFDF;
+}
+
+#pulseaudio {
+  color: #f1fa8c;
+}
+
+#pulseaudio.muted {
+  color: #6272a4;
+}
+
+#custom-logo {
+  color: #bd93f9;
+}
+
+#custom-power {
+  color: #ff5555;
+}
+
+#custom-notification {
+  color: #ff79c6;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+#custom-wallpaper {
+  color: #4089e9;
+}
+
+tooltip {
+  background-color: rgba(40, 42, 54, 0.80); /* Tooltip um pouco menos transparente */
+  border: 2px solid #93c2f9;
+  color: #DFDFDF;
+}

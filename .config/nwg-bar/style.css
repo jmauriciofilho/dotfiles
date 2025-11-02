@@ -1,0 +1,53 @@
+window {
+    background-color: rgba(26, 26, 29, 0.95); /* mais escuro */
+    border-radius: 14px;  
+}
+
+/* Outer bar container */
+#outer-box {
+    margin: 0px;
+}
+
+/* Inner bar container (caixa principal) */
+#inner-box {
+    background-color: rgba(32, 35, 38, 1);
+    border-radius: 14px;                 /* cantos mais arredondados */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(40, 42, 54, 1);
+    padding: 15px 20px;                  /* mais espaço interno */
+    margin: 15px;                        /* mais afastado das bordas */
+}
+
+button, image {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #E6E6E6;
+}
+
+button {
+    padding: 12px 20px;                  /* botões maiores */
+    margin: 8px;                         /* mais espaço entre botões */
+    border-radius: 8px;
+    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+    font-size: 13px;                     /* texto um pouco maior */
+}
+
+/* Hover */
+button:hover {
+    background-color: rgba(98, 114, 164, 0.25);
+    color: #7ea1eb;
+}
+
+/* Active */
+button:active {
+    background-color: rgba(139, 233, 253, 0.18);
+    color: #7A99D9;
+}
+
+/* Urgente/alerta */
+button.urgent {
+    background-color: rgba(139, 0, 0, 0.35);
+    color: #FF5555;
+}

@@ -1,0 +1,12 @@
+* {
+  green: #a3c687;
+  blue: #8AADF4;
+  white: #ffffffff;
+  prata: #9696965b;
+  orange: #dbbc7f;
+  critical-red: #e67e80;
+
+  bg-primary: #202326;
+  bg-secundary: #1E2227;
+  bg-selected: #46494B;
+}

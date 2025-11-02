@@ -1,0 +1,193 @@
+@import "colors.rasi"
+
+configuration {
+	modi: "window,run,drun,calc";
+	display-drun: "Apps";
+	display-window: "Windows";
+	display-run: "Run";
+    display-calc: "Calc";
+	drun-display-format: "{icon} {name}";
+	font: "FiraCode Nerd Font Bold 10";
+	show-icons: true;
+	icon-theme: "Colloid";
+}
+
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    height:                      500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    border:			             3px solid;
+    border-color:	         	 @bg-secundary;
+    border-radius:               9px;
+    cursor:                      "default";
+    background-color:            @bg-primary;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding:                     10px;
+    background-color:            transparent;
+    background-image:            url("~/.config/hypr/wallpaper_current/.current_wallpaper", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+}
+
+listbox {
+    spacing:                     10px;
+    padding:                     10px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     5px;
+    padding:                     10px;
+    border-radius:               9px;
+    background-color:		     @bg-primary;
+    text-color:			         @white;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+    border:			             3px solid;
+    border-color:	         	 @bg-secundary;
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "  ";
+    background-color:            inherit;
+    text-color:                  white;
+}
+entry {
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    background-color:            transparent;
+    text-color:                  @prata;
+}
+button {
+    padding:                     7px;
+    border:			             3px solid;
+    border-color:		         @bg-secundary;
+    border-radius:               9px;
+    background-color:            @bg-primary;
+    text-color:                  @prata;
+    cursor:                      pointer;
+}
+button selected {
+    border:			             3px solid;
+    border-color:		         @blue;
+    text-color:                  @white;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     12px;
+    background-color:            transparent;
+    text-color:                  @white;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    spacing:                     15px;
+    padding:                     4px;
+    border-radius:               0px;
+    background-color:            transparent;
+    text-color:                  @white;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    background-color:            @critical-red;
+    text-color:                  @white;
+}
+element normal.active {
+    background-color:            @bg-selected;
+    text-color:                  @white;
+}
+element selected.normal {
+    text-color:                  @blue;
+}
+element selected.urgent {
+    background-color:            @critical-red;
+    text-color:                  @white;
+}
+element selected.active {
+    background-color:            @bg-selected;
+    text-color:                  @blue;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        26px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+message {
+    background-color:            transparent;
+}
+
+textbox {
+    padding:                     15px;
+    border-radius:               0px;
+    background-color:            @bg-primary;
+    text-color:                  @white;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+error-message {
+    padding:                     15px;
+    border-radius:               20px;
+    background-color:            @bg-primary;
+    text-color:                  @critical-red;
+}
