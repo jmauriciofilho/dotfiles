@@ -1,10 +1,10 @@
 @import "colors.rasi"
 
 configuration {
-	modi: "window,run,drun,calc";
+	modi: "window,keys,drun,calc";
 	display-drun: "Apps";
 	display-window: "Windows";
-	display-run: "Run";
+	display-run: "Keys";
     display-calc: "Calc";
 	drun-display-format: "{icon} {name}";
 	font: "FiraCode Nerd Font Bold 10";
