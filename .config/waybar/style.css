@@ -14,7 +14,7 @@ window#waybar {
 
 #workspaces {
   margin: 0.4rem 0.25rem;
-  background-color: rgba(40, 42, 54, 0.80); /* Botões com transparência */
+  background-color: rgba(40, 42, 54, 0.90); /* Botões com transparência */
 }
 
 #workspaces button {
@@ -24,7 +24,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background-color: rgba(68, 71, 90, 0.80); /* Hover com transparência */
+  background-color: rgba(68, 71, 90, 0.90); /* Hover com transparência */
   color: #DFDFDF;
 }
 
@@ -35,7 +35,7 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  background-color: rgba(255, 85, 85, 0.80); /* Botão urgente com transparência */
+  background-color: rgba(255, 85, 85, 0.90); /* Botão urgente com transparência */
   color: #DFDFDF;
 }
 
@@ -53,7 +53,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
 }
 
 #custom-gpu_temp {
@@ -79,7 +79,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
   padding-right: 10px;
 }
 
@@ -87,7 +87,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.80); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
   padding-right: 13px;
 }
 

@@ -24,8 +24,8 @@
   "modules-right": [
     "mpris",
     "cpu",
-    "memory",
     "custom/cpu_temp",
+    "memory",
     "custom/gpu_temp",
     "pulseaudio",
     "tray",
@@ -73,18 +73,18 @@
     "tooltip": true,
     "interval": 1
   },
-  "memory": {
-    "format": " {used:0.1f}Gi"
-  },
   "custom/cpu_temp": {
-    "format": "<span color='#f75f5f'> </span>{}",
+    "format": "<span color='#f75f5f'> </span>{}",
     "exec": "~/.config/hypr/scripts/cpu_temp.sh",
     "tooltip": true,
     "return-type": "json",
     "interval": 2
   },
+  "memory": {
+    "format": " {used:0.1f}Gi"
+  },
   "custom/gpu_temp": {
-    "format": "<span color='#e0af68'> </span>{}",
+    "format": "<span color='#e0af68'> </span>{}",
     "exec": "~/.config/hypr/scripts/gpu_temp.sh",
     "tooltip": true,
     "return-type": "json",
