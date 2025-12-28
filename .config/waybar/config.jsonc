@@ -14,7 +14,8 @@
   "modules-left": [
     "custom/search_bar",
     "hyprland/workspaces",
-    "hyprland/window"
+    "hyprland/window",
+    "mpris"
     // "wlr/taskbar"
   ],
   "modules-center": [
@@ -22,7 +23,6 @@
     "clock#simpleclock"
   ],
   "modules-right": [
-    "mpris",
     "cpu",
     "custom/cpu_temp",
     "memory",
