@@ -80,6 +80,7 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
+  font-weight: bold;
 }
 
 /* Modulo simple clock */
@@ -122,6 +123,7 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
+  font-weight: bold;
 }
 
 #pulseaudio.muted {
