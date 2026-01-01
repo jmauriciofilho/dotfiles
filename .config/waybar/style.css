@@ -64,6 +64,10 @@ window#waybar {
   background-color: rgba(40, 42, 54, 0.90);
 }
 
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
 /* Modulo mpris */
 #mpris {
   color: #e46b47;

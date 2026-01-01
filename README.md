@@ -19,7 +19,6 @@ Certifique-se de ter os seguintes items instalados no seu sistema
 Primeiro, clone o repositório de arquivos de configuração (dotfiles) no seu diretório $HOME usando o Git.
 
     git clone git@github.com:jmauriciofilho/dotfiles.git
-    cd dotfiles
 
 Em seguida remova os arquivos das pastar correspondentes na pasta .config do sistema
 
@@ -29,5 +28,6 @@ Exemplo de comando para remoção do conteúdo em uma das pastas de configuraç�
 
 Em seguida, use o GNU stow para criar links simbólicos.
 
+    cd dotfiles
     stow .
     
