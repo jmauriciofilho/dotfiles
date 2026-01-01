@@ -1,3 +1,4 @@
+/* Configurações gerais da waybar */
 * {
   border: none;
   border-radius: 4px;
@@ -8,13 +9,15 @@
   font-weight: 600;
 }
 
+/* Definição do background de toda a waybar */
 window#waybar {
-  background-color: transparent; /* Fundo da barra transparente */
+  background-color: transparent;
 }
 
+/* Configuração css do select de workspaces */
 #workspaces {
   margin: 0.4rem 0.25rem;
-  background-color: rgba(40, 42, 54, 0.90); /* Botões com transparência */
+  background-color: rgba(40, 42, 54, 0.90);
 }
 
 #workspaces button {
@@ -24,7 +27,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background-color: rgba(68, 71, 90, 0.90); /* Hover com transparência */
+  background-color: rgba(68, 71, 90, 0.90);
   color: #DFDFDF;
 }
 
@@ -35,56 +38,121 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-  background-color: rgba(255, 85, 85, 0.90); /* Botão urgente com transparência */
+  background-color: rgba(255, 85, 85, 0.90);
   color: #DFDFDF;
+  font-weight: bold;
 }
 
-#clock,
-#pulseaudio,
-#mpris,
-#custom-logo,
-#tray,
-#wlr-taskbar,
-#window {
+/* Configurações do css dos elementos da waybar */
+
+/* Modulo search bar */
+#custom-search_bar {
+  color: #676af0;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90);
+  padding-right: 13px;
 }
 
-#cpu,
-#custom-cpu_temp,
-#memory,
-#custom-gpu_temp {
+/* Modulo window */
+#window {
+  color: #DFDFDF;
   padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
 }
 
+/* Modulo mpris */
+#mpris {
+  color: #e46b47;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
+}
+
+/* Modulo clock */
+#clock {
+  color: #bd93f9;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
+}
+
+/* Modulo simple clock */
+#clock.simpleclock {
+  color: #50fa7b;
+}
+
+/* Group Modulo Info hardware */
 #info_hardware {
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90);
 }
 
-#custom-gpu_temp {
-  color: #e0af68;
+/* Modulo CPU */
+#cpu {
+  color: #ffb86c;
+  padding: 0.3rem 0.6rem;
 }
 
+/* Modulo CPU temp */
 #custom-cpu_temp {
   color: #f75f5f;
+  padding: 0.3rem 0.6rem;
 }
 
-#custom-search_bar {
-  color: #676af0;
+/* Modulo memory */
+#memory {
+  color: #8be9fd;
+  padding: 0.3rem 0.6rem;
 }
 
-#mpris {
-  color: #e46b47;
+/* Moludo GPU temp */
+#custom-gpu_temp {
+  color: #e0af68;
+  padding: 0.3rem 0.6rem;
 }
 
-#custom-wallpaper,
-#custom-search_bar,
-#custom-power,
+/* Modulo pulseaudio */
+#pulseaudio {
+  color: #f1fa8c;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
+}
+
+#pulseaudio.muted {
+  color: #6272a4;
+}
+
+/* Module tray */
+#tray{
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
+}
+
+/* Modulo notification */
 #custom-notification {
+  color: #ff79c6;
+  font-family: "JetBrainsMono Nerd Font";
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90);
+  padding-right: 10px;
+}
+
+/* Modulo power */
+#custom-power {
+  color: #ff5555;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
@@ -92,70 +160,9 @@ window#waybar {
   padding-right: 10px;
 }
 
-#custom-search_bar {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
-  padding-right: 13px;
-}
-
-#custom-sep {
-  padding: 0px;
-  color: #6272a4;
-}
-
-window#waybar.empty #window {
-  background-color: transparent;
-}
-
-#cpu {
-  color: #ffb86c;
-}
-
-#memory {
-  color: #8be9fd;
-}
-
-#clock {
-  color: #bd93f9;
-}
-
-#clock.simpleclock {
-  color: #50fa7b;
-}
-
-#window {
-  color: #DFDFDF;
-}
-
-#pulseaudio {
-  color: #f1fa8c;
-}
-
-#pulseaudio.muted {
-  color: #6272a4;
-}
-
-#custom-logo {
-  color: #bd93f9;
-}
-
-#custom-power {
-  color: #ff5555;
-}
-
-#custom-notification {
-  color: #ff79c6;
-  font-family: "JetBrainsMono Nerd Font";
-}
-
-#custom-wallpaper {
-  color: #4089e9;
-}
-
+/* Config css dos tooltips da waybar */
 tooltip {
-  background-color: rgba(40, 42, 54, 0.80); /* Tooltip um pouco menos transparente */
+  background-color: rgba(40, 42, 54, 0.95); /* Tooltip um pouco menos transparente */
   border: 2px solid #93c2f9;
   color: #DFDFDF;
 }

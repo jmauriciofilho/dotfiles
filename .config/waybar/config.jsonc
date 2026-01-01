@@ -30,14 +30,14 @@
   "modules-left": [
     "custom/search_bar",
     "hyprland/workspaces",
-    "hyprland/window",
-    "mpris"
+    "hyprland/window"
   ],
   "modules-center": [
     "clock",
     "clock#simpleclock"
   ],
   "modules-right": [
+    "mpris",
     "group/info_hardware",
     "pulseaudio",
     "tray",
