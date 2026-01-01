@@ -8,7 +8,7 @@
 
 {
     "custom/cpu_temp": {
-        "format": "<span color='#f75f5f'> </span>{}",
+        "format": "<span> </span>{}",
         "exec": "~/.config/hypr/scripts/cpu_temp.sh",
         "tooltip": true,
         "return-type": "json",

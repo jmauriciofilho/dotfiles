@@ -89,6 +89,7 @@ window#waybar {
 
 /* Group Modulo Info hardware */
 #info_hardware {
+  color: #ffb86c;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
@@ -96,25 +97,21 @@ window#waybar {
 
 /* Modulo CPU */
 #cpu {
-  color: #ffb86c;
   padding: 0.3rem 0.6rem;
 }
 
 /* Modulo CPU temp */
 #custom-cpu_temp {
-  color: #f75f5f;
   padding: 0.3rem 0.6rem;
 }
 
 /* Modulo memory */
 #memory {
-  color: #8be9fd;
   padding: 0.3rem 0.6rem;
 }
 
 /* Moludo GPU temp */
 #custom-gpu_temp {
-  color: #e0af68;
   padding: 0.3rem 0.6rem;
 }
 
