@@ -1,0 +1,14 @@
+/*
+    Configuração do módulo clock - Relógio.
+
+    Mostra a hora.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "clock#simpleclock": {
+        "tooltip": false,
+        "format": " {:%H:%M}"
+    }
+}

@@ -39,18 +39,27 @@ window#waybar {
   color: #DFDFDF;
 }
 
-#custom-gpu_temp,
-#custom-cpu_temp,
 #clock,
 #pulseaudio,
 #mpris,
 #custom-logo,
-#cpu,
 #tray,
-#memory,
 #wlr-taskbar,
 #window {
   padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 4px;
+  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
+}
+
+#cpu,
+#custom-cpu_temp,
+#memory,
+#custom-gpu_temp {
+  padding: 0.3rem 0.6rem;
+}
+
+#info_hardware {
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */

@@ -1,0 +1,23 @@
+/*
+    Configuração do módulo hyperland workspaces.
+
+    Mostra as áreas de trabalho abertas e qual está ativa.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{id}",
+        "all-outputs": true,
+        "disable-scroll": false,
+        "active-only": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+        "persistent-workspaces":
+        {
+        "*": 5
+        }
+    }
+}

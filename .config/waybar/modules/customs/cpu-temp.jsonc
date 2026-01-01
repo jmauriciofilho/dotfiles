@@ -1,0 +1,17 @@
+/*
+    Configuração do módulo temperatura da CPU.
+
+    Mostra a temperatura da CPU no momento.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "custom/cpu_temp": {
+        "format": "<span color='#f75f5f'> </span>{}",
+        "exec": "~/.config/hypr/scripts/cpu_temp.sh",
+        "tooltip": true,
+        "return-type": "json",
+        "interval": 2
+    }
+}

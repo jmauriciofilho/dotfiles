@@ -1,0 +1,27 @@
+/*
+    Configuração do módulo mpris - player de som e vídeo.
+
+    Mostra o que está tocando e pode realizar pause e play como ação.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "mpris": {
+        "interval": 10,
+        "format": " {title} ",
+        "format-paused": " {status_icon} {title} ",
+        "format-playing": " {status_icon} {title} ",
+        "format-stopped": " {status_icon} {title} ",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "scroll-step": 5.0,
+        "smooth-scrolling-threshold": 1,
+        "status-icons": {
+            "paused": "",
+            "playing": "󰏤",
+            "stopped": ""
+        },
+        "max-length": 30
+    }
+}

@@ -1,0 +1,19 @@
+/*
+    Configuração do módulo hyperland window.
+
+    Mostra o título da janela aberta e em primeiro plano.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        "icon": true,
+        "rewrite": {
+            "New tab - (.*)": "$1",
+            "Início — (.*)": "$1",
+            "Sem título - (.*)": "$1"
+        }
+    }
+}

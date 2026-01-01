@@ -1,0 +1,15 @@
+/*
+    Configuração do módulo CPU.
+
+    Mostra a porcentagem de consumo da CPU do computador.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "interval": 1
+  }
+}

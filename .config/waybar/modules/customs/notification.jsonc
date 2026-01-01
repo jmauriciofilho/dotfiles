@@ -1,0 +1,29 @@
+/*
+    Configuração do módulo custom de notificações.
+
+    Icone para se clicado abrir área de notificações do sistema.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "custom/notification": {
+        "escape": true,
+        "exec": "swaync-client -swb",
+        "exec-if": "which swaync-client",
+        "format": "{icon}",
+        "format-icons": {
+        "notification": "󱅫",
+        "none": "󰂚",
+        "dnd-notification": "󰂛",
+        "dnd-none": "󰂛",
+        "inhibited-notification": "󰅸",
+        "inhibited-none": "󰂜",
+        "dnd-inhibited-notification": "󰪑",
+        "dnd-inhibited-none": "󰪑"
+        },
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "return-type": "json",
+        "tooltip": false
+    }
+}

@@ -1,0 +1,15 @@
+/*
+    Configuração do módulo custom de power.
+
+    Icone para se clicado abrir botões de encerramento ou renicialização do sistema.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "nwg-bar",
+        "format": "⏻"
+    }
+}

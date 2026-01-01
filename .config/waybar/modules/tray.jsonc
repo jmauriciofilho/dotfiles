@@ -1,0 +1,14 @@
+/*
+    Configuração do módulo tray.
+
+    Mostra programas em excusão no segundo plano e fornece alguns atalhos para interação com os mesmos.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "tray": {
+        "show-passive-items": true,
+        "spacing": 10
+    }
+}

@@ -1,4 +1,20 @@
 {
+  "include": [
+    "~/.config/waybar/modules/customs/search-bar.jsonc",
+    "~/.config/waybar/modules/workspaces.jsonc",
+    "~/.config/waybar/modules/window.jsonc",
+    "~/.config/waybar/modules/mpris.jsonc",
+    "~/.config/waybar/modules/clock.jsonc",
+    "~/.config/waybar/modules/simple-clock.jsonc",
+    "~/.config/waybar/modules/cpu.jsonc",
+    "~/.config/waybar/modules/customs/cpu-temp.jsonc",
+    "~/.config/waybar/modules/memory.jsonc",
+    "~/.config/waybar/modules/customs/gpu-temp.jsonc",
+    "~/.config/waybar/modules/pulseaudio.jsonc",
+    "~/.config/waybar/modules/tray.jsonc",
+    "~/.config/waybar/modules/customs/notification.jsonc",
+    "~/.config/waybar/modules/customs/power.jsonc"
+  ],
   "layer": "bottom",
   "position": "top",
   "height": 42,
@@ -16,166 +32,25 @@
     "hyprland/workspaces",
     "hyprland/window",
     "mpris"
-    // "wlr/taskbar"
   ],
   "modules-center": [
     "clock",
     "clock#simpleclock"
   ],
   "modules-right": [
-    "cpu",
-    "custom/cpu_temp",
-    "memory",
-    "custom/gpu_temp",
+    "group/info_hardware",
     "pulseaudio",
     "tray",
-    // "custom/wallpaper",
     "custom/notification",
     "custom/power"
   ],
-  "custom/search_bar": {
-    "on-click": "rofi -show drun",
-    "format": "",
-    "tooltip": false
-  },
-  "hyprland/window": {
-    "format": "{initialTitle}",
-    "icon": true,
-    "rewrite": {
-		  "New tab - (.*)": "$1",
-      "Início — (.*)": "$1",
-      "Sem título - (.*)": "$1"
-	  }
-  },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 20,
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "ignore-list": []
-  },
-  "hyprland/workspaces": {
-    "on-click": "activate",
-    "format": "{id}",
-    "all-outputs": true,
-    "disable-scroll": false,
-    "active-only": false,
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
-    "persistent-workspaces":
-    {
-      "*": 5
-    }
-  },
-  "cpu": {
-    "format": " {usage}%",
-    "tooltip": true,
-    "interval": 1
-  },
-  "custom/cpu_temp": {
-    "format": "<span color='#f75f5f'> </span>{}",
-    "exec": "~/.config/hypr/scripts/cpu_temp.sh",
-    "tooltip": true,
-    "return-type": "json",
-    "interval": 2
-  },
-  "memory": {
-    "format": " {used:0.1f}Gi"
-  },
-  "custom/gpu_temp": {
-    "format": "<span color='#e0af68'> </span>{}",
-    "exec": "~/.config/hypr/scripts/gpu_temp.sh",
-    "tooltip": true,
-    "return-type": "json",
-    "interval": 2
-  },
-  "pulseaudio": {
-      "format": "{volume}% {icon}  {format_source}",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": "󰂲 {icon} {format_source}",
-      "format-muted": "󰝟 {format_source}",
-      "format-source": "{volume}% ",
-      "format-source-muted": " ",
-      "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "󰋎",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": ["", "", ""]
-      },
-      "on-click": "pavucontrol"
-  },
-  "mpris": {
-    "interval": 10,
-    "format": " {title} ",
-    "format-paused": " {status_icon} {title} ",
-    "format-playing": " {status_icon} {title} ",
-    "format-stopped": " {status_icon} {title} ",
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl next",
-    "scroll-step": 5.0,
-    "smooth-scrolling-threshold": 1,
-    "status-icons": {
-      "paused": "",
-      "playing": "󰏤",
-      "stopped": ""
-    },
-    "max-length": 30
-  },
-  "tray": {
-    "show-passive-items": true,
-    "spacing": 10
-  },
-  "clock#simpleclock": {
-    "tooltip": false,
-    "format": " {:%H:%M}"
-  },
-  "clock": {
-    "format": " {:L%a %d %b}",
-    "calendar": {
-      "format": {
-        "days": "<span weight='normal'>{}</span>",
-        "months": "<span color='#cdd6f4'><b>{}</b></span>",
-        "today": "<span color='#f38ba8' weight='700'><u>{}</u></span>",
-        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
-        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>"
-      },
-      "mode": "month",
-      "mode-mon-col": 1,
-      "on-scroll": 1
-    },
-    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
-  },
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "nwg-bar",
-    "format": "⏻"
-  },
-  "custom/notification": {
-    "escape": true,
-    "exec": "swaync-client -swb",
-    "exec-if": "which swaync-client",
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
-      "dnd-notification": "󰂛",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰅸",
-      "inhibited-none": "󰂜",
-      "dnd-inhibited-notification": "󰪑",
-      "dnd-inhibited-none": "󰪑"
-    },
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "return-type": "json",
-    "tooltip": false
+  "group/info_hardware": {
+    "orientation": "horizontal",
+		"modules": [
+			"cpu",
+      "custom/cpu_temp",
+      "memory",
+      "custom/gpu_temp"
+		]
   }
-  // "custom/wallpaper": {
-  //   "tooltip": false,
-  //   "format": "",
-  //   "on-click": "waypaper"
-  // }
 }

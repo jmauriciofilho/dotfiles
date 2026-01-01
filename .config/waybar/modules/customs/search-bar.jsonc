@@ -1,0 +1,15 @@
+/*
+    Configuração do módulo custom search bar.
+
+    Icone na waybar que se clicado abre o buscador do sistema.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "custom/search_bar": {
+        "on-click": "rofi -show drun",
+        "format": "",
+        "tooltip": false
+    }
+}

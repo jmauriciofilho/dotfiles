@@ -1,0 +1,17 @@
+/*
+    Configuração do módulo temperatura da GPU.
+
+    Mostra a temperatura da GPU no momento.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "custom/gpu_temp": {
+        "format": "<span color='#e0af68'> </span>{}",
+        "exec": "~/.config/hypr/scripts/gpu_temp.sh",
+        "tooltip": true,
+        "return-type": "json",
+        "interval": 2
+    }
+}

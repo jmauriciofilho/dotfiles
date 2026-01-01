@@ -1,0 +1,13 @@
+/*
+    Configuração do módulo memory.
+
+    Mostra a memoria RAM em uso no computador.
+
+    Para modificar altere as linhas a baixo.
+*/
+
+{
+    "memory": {
+        "format": " {used:0.1f}Gi"
+    }
+}
