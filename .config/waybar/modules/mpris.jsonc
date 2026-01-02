@@ -9,12 +9,14 @@
 {
     "mpris": {
         "interval": 10,
-        "format": " {title} ",
-        "format-paused": " {status_icon} {title} ",
-        "format-playing": " {status_icon} {title} ",
-        "format-stopped": " {status_icon} {title} ",
+        "format": " {artist} - {title} ",
+        "format-paused": " {status_icon} {artist} - {title} ",
+        "format-playing": " {status_icon} {artist} - {title} ",
+        "format-stopped": " {status_icon} {artist} - {title} ",
         "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl next",
+        "on-click-right": "playerctl stop",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
         "scroll-step": 5.0,
         "smooth-scrolling-threshold": 1,
         "status-icons": {
@@ -22,6 +24,14 @@
             "playing": "󰏤",
             "stopped": ""
         },
+        "player-icons": {
+            "default": "🎵",
+            "mpv": "🎵",
+            "spotify": "󰓇",
+            "chrome": ""
+        },
+        "tooltip-format": "{title}\n{artist}\n{position}/{length}",
+        "tooltip-format-paused": "{title}\n{artist}\nPaused",
         "max-length": 30
     }
 }
