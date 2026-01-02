@@ -1,11 +1,12 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    // "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "builtin",
-        "height": 15,
-        "width": 30,
+        // "type": "builtin",
+        "source": "~/.config/fastfetch/logos/arch.txt",
+        "height": 5,
+        "width": 5,
         "padding": {
-            "top": 5,
+            "top": 3,
             "left": 3
         }
     },
@@ -139,11 +140,6 @@
             "type": "custom",
             "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
         },
-
-//        {
-//            "type": "colors"
-//        },
-
         {
             "type": "colors",
             "paddingLeft": 2,
