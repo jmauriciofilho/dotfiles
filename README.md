@@ -1,6 +1,6 @@
 # Meus dotfiles
 
-Este repositório contem os arquivos dotfiles bases para meu setup pessoal do arch linux
+Este repositório contem os arquivos dotfiles bases para configurar meus setups pessoais para o (Arch linux)[https://archlinux.org/] e o (Cachyos)[https://cachyos.org/]
 
 ## Requerimentos
 
