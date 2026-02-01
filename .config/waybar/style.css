@@ -9,12 +9,14 @@
   font-weight: 600;
 }
 
-/* Definição do background de toda a waybar */
+/* Background geral */
 window#waybar {
   background-color: transparent;
 }
 
-/* Configuração css do select de workspaces */
+/* ─────────────────────────────
+   Workspaces
+   ───────────────────────────── */
 #workspaces {
   margin: 0.4rem 0.25rem;
   background-color: rgba(40, 42, 54, 0.90);
@@ -23,31 +25,31 @@ window#waybar {
 #workspaces button {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  color: #DFDFDF;
+  color: #e6e6e6;
 }
 
 #workspaces button:hover {
   background-color: rgba(68, 71, 90, 0.90);
-  color: #DFDFDF;
+  color: #ffffff;
 }
 
 #workspaces button.active {
-  background-color: rgb(112, 146, 250);
-  color: #DFDFDF;
+  background-color: #ff2a6d;
+  color: #202326;
   font-weight: bold;
 }
 
 #workspaces button.urgent {
-  background-color: rgba(255, 85, 85, 0.90);
-  color: #DFDFDF;
+  background-color: #ff1f5b;
+  color: #ffffff;
   font-weight: bold;
 }
 
-/* Configurações do css dos elementos da waybar */
-
-/* Modulo search bar */
+/* ─────────────────────────────
+   Search bar
+   ───────────────────────────── */
 #custom-search_bar {
-  color: #676af0;
+  color: #ff5c8a;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
@@ -55,9 +57,11 @@ window#waybar {
   padding-right: 13px;
 }
 
-/* Modulo window */
+/* ─────────────────────────────
+   Window title
+   ───────────────────────────── */
 #window {
-  color: #DFDFDF;
+  color: #f2e6e6;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
@@ -68,18 +72,22 @@ window#waybar.empty #window {
   background-color: transparent;
 }
 
-/* Modulo mpris */
+/* ─────────────────────────────
+   MPRIS
+   ───────────────────────────── */
 #mpris {
-  color: #e46b47;
+  color: #ff4d8d;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
 
-/* Modulo clock */
+/* ─────────────────────────────
+   Clock
+   ───────────────────────────── */
 #clock {
-  color: #bd93f9;
+  color: #c77dff;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
@@ -87,42 +95,33 @@ window#waybar.empty #window {
   font-weight: bold;
 }
 
-/* Modulo simple clock */
 #clock.simpleclock {
-  color: #50fa7b;
+  color: #ff2a6d;
 }
 
-/* Group Modulo Info hardware */
+/* ─────────────────────────────
+   Info Hardware
+   ───────────────────────────── */
 #info_hardware {
-  color: #ffb86c;
+  color: #ff9f1c;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
 
-/* Modulo CPU */
-#cpu {
-  padding: 0.3rem 0.6rem;
-}
-
-/* Modulo CPU temp */
-#custom-cpu_temp {
-  padding: 0.3rem 0.6rem;
-}
-
-/* Modulo memory */
-#memory {
-  padding: 0.3rem 0.6rem;
-}
-
-/* Moludo GPU temp */
+/* CPU / GPU / Memory */
+#cpu,
+#custom-cpu_temp,
+#memory,
 #custom-gpu_temp {
   padding: 0.3rem 0.6rem;
 }
 
-/* Modulo pulseaudio */
+/* ─────────────────────────────
+   Audio
+   ───────────────────────────── */
 #pulseaudio {
-  color: #f1fa8c;
+  color: #f9c74f;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
@@ -131,20 +130,24 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-  color: #6272a4;
+  color: #6f737a;
 }
 
-/* Module tray */
-#tray{
+/* ─────────────────────────────
+   Tray
+   ───────────────────────────── */
+#tray {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
 
-/* Modulo notification */
+/* ─────────────────────────────
+   Notifications
+   ───────────────────────────── */
 #custom-notification {
-  color: #ff79c6;
+  color: #e0aaff;
   font-family: "JetBrainsMono Nerd Font";
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -153,19 +156,23 @@ window#waybar.empty #window {
   padding-right: 10px;
 }
 
-/* Modulo power */
+/* ─────────────────────────────
+   Power
+   ───────────────────────────── */
 #custom-power {
-  color: #ff5555;
+  color: #ff1f5b;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 4px;
-  background-color: rgba(40, 42, 54, 0.90); /* Módulos com transparência */
+  background-color: rgba(40, 42, 54, 0.90);
   padding-right: 10px;
 }
 
-/* Config css dos tooltips da waybar */
+/* ─────────────────────────────
+   Tooltips
+   ───────────────────────────── */
 tooltip {
-  background-color: rgba(40, 42, 54, 0.95); /* Tooltip um pouco menos transparente */
-  border: 2px solid #93c2f9;
-  color: #DFDFDF;
+  background-color: rgba(40, 42, 54, 0.95);
+  border: 2px solid #ff2a6d;
+  color: #f2e6e6;
 }
