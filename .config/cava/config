@@ -233,14 +233,14 @@ background = '#202326'
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
 
-gradient_color_1 = '#8bd5ca'
-gradient_color_2 = '#91d7e3'
-gradient_color_3 = '#7dc4e4'
-gradient_color_4 = '#8aadf4'
-gradient_color_5 = '#c6a0f6'
-gradient_color_6 = '#f5bde6'
-gradient_color_7 = '#ee99a0'
-gradient_color_8 = '#ed8796'
+gradient_color_1 = '#ff2a6d'  # vermelho neon (core)
+gradient_color_2 = '#ff4d8d'  # vermelho/rosa synth
+gradient_color_3 = '#ff5fa2'  # rosa cyberpunk
+gradient_color_4 = '#c77dff'  # violeta elétrico
+gradient_color_5 = '#a855f7'  # roxo neon
+gradient_color_6 = '#e0aaff'  # magenta claro
+gradient_color_7 = '#ff5c8a'  # pink quente
+gradient_color_8 = '#ff1f5b'  # vermelho profundo neon
 
 
 
