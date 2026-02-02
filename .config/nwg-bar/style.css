@@ -1,6 +1,6 @@
 window {
-    background-color: rgba(26, 26, 29, 0.95); /* mais escuro */
-    border-radius: 14px;  
+    background-color: rgba(32, 35, 38, 0.95); /* mesmo bg do setup */
+    border-radius: 14px;
 }
 
 /* Outer bar container */
@@ -11,43 +11,43 @@ window {
 /* Inner bar container (caixa principal) */
 #inner-box {
     background-color: rgba(32, 35, 38, 1);
-    border-radius: 14px;                 /* cantos mais arredondados */
+    border-radius: 14px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(40, 42, 54, 1);
-    padding: 15px 20px;                  /* mais espaço interno */
-    margin: 15px;                        /* mais afastado das bordas */
+    border-color: rgba(255, 42, 109, 0.25); /* vermelho neon translúcido */
+    padding: 15px 20px;
+    margin: 15px;
 }
 
 button, image {
     background: none;
     border: none;
     box-shadow: none;
-    color: #E6E6E6;
+    color: #f2e6e6; /* branco quente */
 }
 
 button {
-    padding: 12px 20px;                  /* botões maiores */
-    margin: 8px;                         /* mais espaço entre botões */
+    padding: 12px 20px;
+    margin: 8px;
     border-radius: 8px;
     font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
-    font-size: 13px;                     /* texto um pouco maior */
+    font-size: 13px;
 }
 
 /* Hover */
 button:hover {
-    background-color: rgba(98, 114, 164, 0.25);
-    color: #7ea1eb;
+    background-color: rgba(255, 42, 109, 0.20); /* vermelho neon suave */
+    color: #ff5c8a;
 }
 
 /* Active */
 button:active {
-    background-color: rgba(139, 233, 253, 0.18);
-    color: #7A99D9;
+    background-color: rgba(255, 42, 109, 0.35);
+    color: #ffffff;
 }
 
-/* Urgente/alerta */
+/* Urgente / alerta */
 button.urgent {
-    background-color: rgba(139, 0, 0, 0.35);
-    color: #FF5555;
+    background-color: rgba(255, 31, 91, 0.40);
+    color: #ffffff;
 }
