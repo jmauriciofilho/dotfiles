@@ -1,12 +1,14 @@
 * {
-  green: #a3c687;
-  blue: #8AADF4;
-  white: #ffffffff;
-  prata: #9696965b;
-  orange: #dbbc7f;
-  critical-red: #e67e80;
+  /* Cores de destaque */
+  green:        #1dd3b0;   /* teal sintético (status ok) */
+  blue:         #4cc9f0;   /* azul elétrico */
+  white:        #f2e6e6ff; /* branco quente */
+  prata:        #6f737a5b; /* cinza neutro translúcido */
+  orange:       #f9c74f;   /* âmbar neon */
+  critical-red: #ff1f5b;   /* vermelho crítico neon */
 
-  bg-primary: #2b3948ff;
-  bg-secundary: #2a3037ff;
-  bg-selected: #46494B;
+  /* Backgrounds */
+  bg-primary:   #202326ff; /* mesmo background do terminal */
+  bg-secundary: #2a2e38ff; /* cards / listas */
+  bg-selected:  #ff2a6d;   /* seleção ativa */
 }

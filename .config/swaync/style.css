@@ -1,27 +1,31 @@
 :root {
-  --bg-primary: #202326;        /* Dark background - main canvas */
-  --bg-secondary: #202326;      /* Secondary background - panels */
-  --bg-tertiary: #3c3836;       /* Tertiary background - hover states */
-  --bg-selected: #504945;       /* Selection background */
+  /* Backgrounds */
+  --bg-primary:   #202326;   /* mesmo background do Kitty */
+  --bg-secondary: #202326;
+  --bg-tertiary:  #2a2e38;   /* cards / hover */
+  --bg-selected:  #ff2a6d;   /* seleção ativa */
 
-  --fg-primary: #DFDFDF;         /* Primary text - cream/off-white */
-  --fg-secondary: #d5c4a1;       /* Secondary text - muted cream */
-  --fg-tertiary: #bdae93;       /* Tertiary text - greyish cream */
-  --fg-disabled: #665c54;       /* Disabled text - dark grey */
+  /* Foregrounds */
+  --fg-primary:   #f2e6e6;   /* branco quente */
+  --fg-secondary: #e0aaff;   /* magenta suave */
+  --fg-tertiary:  #c77dff;   /* violeta synth */
+  --fg-disabled:  #6f737a;   /* cinza apagado */
 
-  --accent-green: #78997A;       /* Spotify green accent */
-  --accent-orange: #D08B57;      /* Warm orange accent */
-  --accent-red: #B05A5A;         /* Error/critical red */
-  --accent-blue: #7699A3;        /* Info blue */
-  --accent-purple: #8D7AAE;      /* Purple accent */
-  --accent-blue-border: #93c2f928;    /* Blue border */
+  /* Accent colors (cyberpunk) */
+  --accent-green:  #1dd3b0;  /* teal sintético (toggles ON) */
+  --accent-orange: #f9c74f;  /* âmbar neon */
+  --accent-red:    #ff1f5b;  /* vermelho crítico */
+  --accent-blue:   #4cc9f0;  /* azul elétrico */
+  --accent-purple:#c77dff;   /* roxo synth */
 
-  --border-primary: #504945;     /* Primary border color */
-  --border-focus: #b8bb26;       /* Focus border - green accent */
+  /* Borders */
+  --accent-blue-border: rgba(255, 42, 109, 0.25); /* vermelho neon translúcido */
+  --border-primary: #3f444a;
+  --border-focus:   #ff2a6d;
 
-  /* Special Purpose Colors */
+  /* Special purpose */
   --mpris-album-art-overlay: rgba(0, 0, 0, 0.75);
-  --mpris-button-hover: rgba(0, 0, 0, 1);
+  --mpris-button-hover:      #ff2a6d;
 }
 
 /* ========================================================================
