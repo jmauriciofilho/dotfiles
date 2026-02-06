@@ -115,3 +115,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Execute fastfetch 
 fastfetch
+export PATH="/home/mauricio/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/mauricio/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
