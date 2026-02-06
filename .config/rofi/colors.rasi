@@ -1,7 +1,7 @@
 * {
   /* Cores de destaque */
   green:        #1dd3b0;   /* teal sintético (status ok) */
-  blue:         #4cc9f0;   /* azul elétrico */
+  blue:         #e32c66ff;   /* vermelho cyber */
   white:        #f2e6e6ff; /* branco quente */
   prata:        #6f737a5b; /* cinza neutro translúcido */
   orange:       #f9c74f;   /* âmbar neon */
@@ -10,5 +10,5 @@
   /* Backgrounds */
   bg-primary:   #202326ff; /* mesmo background do terminal */
   bg-secundary: #2a2e38ff; /* cards / listas */
-  bg-selected:  #ff2a6d;   /* seleção ativa */
+  bg-selected:  #4cc9f0;   /* seleção ativa */
 }

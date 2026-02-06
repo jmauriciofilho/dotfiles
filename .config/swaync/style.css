@@ -1,29 +1,26 @@
 :root {
-  /* Backgrounds */
-  --bg-primary:   #202326;   /* mesmo background do Kitty */
-  --bg-secondary: #202326;
-  --bg-tertiary:  #2a2e38;   /* cards / hover */
-  --bg-selected:  #ff2a6d;   /* seleção ativa */
+  /* Backgrounds com transparência (0.85 = 85% opaco) */
+  --bg-primary:   rgba(32, 35, 38, 0.85);   
+  --bg-secondary: rgba(32, 35, 38, 0.85);
+  --bg-tertiary:  rgba(42, 46, 56, 0.9);   /* um pouco mais escuro para contraste */
+  --bg-selected:  #ff2a6d;   
 
-  /* Foregrounds */
-  --fg-primary:   #f2e6e6;   /* branco quente */
-  --fg-secondary: #e0aaff;   /* magenta suave */
-  --fg-tertiary:  #c77dff;   /* violeta synth */
-  --fg-disabled:  #6f737a;   /* cinza apagado */
+  /* Restante das cores permanece igual */
+  --fg-primary:   #f2e6e6;
+  --fg-secondary: #e0aaff;
+  --fg-tertiary:  #c77dff;
+  --fg-disabled:  #6f737a;
 
-  /* Accent colors (cyberpunk) */
-  --accent-green:  #1dd3b0;  /* teal sintético (toggles ON) */
-  --accent-orange: #f9c74f;  /* âmbar neon */
-  --accent-red:    #ff1f5b;  /* vermelho crítico */
-  --accent-blue:   #4cc9f0;  /* azul elétrico */
-  --accent-purple:#c77dff;   /* roxo synth */
+  --accent-green:  #1dd3b0;
+  --accent-orange: #f9c74f;
+  --accent-red:    #ff1f5b;
+  --accent-blue:   #4cc9f0;
+  --accent-purple: #c77dff;
 
-  /* Borders */
-  --accent-blue-border: rgba(255, 42, 109, 0.25); /* vermelho neon translúcido */
+  --accent-blue-border: rgba(255, 42, 109, 0.25);
   --border-primary: #3f444a;
   --border-focus:   #ff2a6d;
 
-  /* Special purpose */
   --mpris-album-art-overlay: rgba(0, 0, 0, 0.75);
   --mpris-button-hover:      #ff2a6d;
 }
