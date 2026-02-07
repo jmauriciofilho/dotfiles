@@ -30,4 +30,11 @@ Em seguida, use o GNU stow para criar links simbólicos.
 
     cd dotfiles
     stow .
-    
+
+## TO-DO - Pontos para melhorar e ajustar nos meus dotfiles
+
+- [] Ajustar cor de alerta da waybar para um próximo do amarelo
+- [] Melhorar cores e layout do Rofi
+- [] Ajustar icone zen browser no Rofi
+- [] Melhorar transparência e adicionar blur no swaync
+- [] Criar seletor mais estiloso para wallpapers

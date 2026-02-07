@@ -1,5 +1,20 @@
-@import "colors.rasi"
+/* Configuração de cores*/
+* {
+  /* Cores de destaque */
+  green:        #1dd3b0;   /* teal sintético (status ok) */
+  blue:         #4cc9f0;   /* azul ciano */
+  white:        #f2e6e6ff; /* branco quente */
+  prata:        #6f737a5b; /* cinza neutro translúcido */
+  orange:       #f9c74f;   /* âmbar neon */
+  critical-red: #ff1f5b;   /* vermelho crítico neon */
 
+  /* Backgrounds */
+  bg-primary:   #202326ff; /* mesmo background do terminal */
+  bg-secundary: #2a2e38ff; /* cards / listas */
+  bg-selected:  #e32c66ff;   /* seleção ativa */
+}
+
+/* Configuração do layout*/
 configuration {
 	modi: "window,keys,drun,calc";
 	display-drun: "Apps";
