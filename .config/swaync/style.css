@@ -1,8 +1,8 @@
 :root {
   /* Backgrounds com transparência (0.85 = 85% opaco) */
-  --bg-primary:   rgba(32, 35, 38, 0.85);   
-  --bg-secondary: rgba(32, 35, 38, 0.85);
-  --bg-tertiary:  rgba(42, 46, 56, 0.9);   /* um pouco mais escuro para contraste */
+  --bg-primary:   rgba(32, 35, 38, 0.95);   
+  --bg-secondary: rgba(32, 35, 38, 0.95);
+  --bg-tertiary:  rgba(42, 46, 56, 0.95);   /* um pouco mais escuro para contraste */
   --bg-selected:  #ff2a6d;   
 
   /* Restante das cores permanece igual */
