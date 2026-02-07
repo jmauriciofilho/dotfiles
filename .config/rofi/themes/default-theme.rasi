@@ -1,4 +1,4 @@
-/* Configuração de cores*/
+/* Configuração de cores */
 * {
   /* Cores de destaque */
   green:        #1dd3b0;   /* teal sintético (status ok) */
@@ -14,7 +14,7 @@
   bg-selected:  #e32c66ff;   /* seleção ativa */
 }
 
-/* Configuração do layout*/
+/* Configuração do layout */
 configuration {
 	modi: "window,keys,drun,calc";
 	display-drun: "Apps";

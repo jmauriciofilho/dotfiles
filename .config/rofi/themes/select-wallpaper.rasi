@@ -1,0 +1,182 @@
+* {
+    /* ─────────────────────────────
+       PRIMARY (vermelho neon)
+       ───────────────────────────── */
+    primary:                     #ff2a6d;
+    primary-fixed:               #ff5c8a;
+    primary-fixed-dim:           #ff2a6d;
+    on-primary:                  #202326;
+    on-primary-fixed:            #202326;
+    on-primary-fixed-variant:    #2a2e38;
+    primary-container:           #ff2a6d;
+    on-primary-container:        #202326;
+
+    /* ─────────────────────────────
+       SECONDARY (violeta / synth)
+       ───────────────────────────── */
+    secondary:                   #c77dff;
+    secondary-fixed:             #e0aaff;
+    secondary-fixed-dim:         #c77dff;
+    on-secondary:                #202326;
+    on-secondary-fixed:          #202326;
+    on-secondary-fixed-variant:  #2a2e38;
+    secondary-container:         #3a2b4f;
+    on-secondary-container:      #e0aaff;
+
+    /* ─────────────────────────────
+       TERTIARY (rosa / magenta)
+       ───────────────────────────── */
+    tertiary:                    #ff5c8a;
+    tertiary-fixed:              #ff8fb1;
+    tertiary-fixed-dim:          #ff5c8a;
+    on-tertiary:                 #202326;
+    on-tertiary-fixed:           #202326;
+    on-tertiary-fixed-variant:   #2a2e38;
+    tertiary-container:          #4a2436;
+    on-tertiary-container:       #ffd1e1;
+
+    /* ─────────────────────────────
+       ERROR / CRITICAL
+       ───────────────────────────── */
+    error:                       #ff1f5b;
+    on-error:                    #ffffff;
+    error-container:             #6b0f2a;
+    on-error-container:          #ffd6e2;
+
+    /* ─────────────────────────────
+       SURFACES / BACKGROUNDS
+       ───────────────────────────── */
+    surface:                     #202326;
+    on-surface:                  #f2e6e6;
+    on-surface-variant:          #cfc4cc;
+
+    surface-dim:                 #1b1d22;
+    surface-bright:              #2a2e38;
+
+    surface-container-lowest:    #16181c;
+    surface-container-low:       #1b1d22;
+    surface-container:           #202326;
+    surface-container-high:      #2a2e38;
+    surface-container-highest:   #3f444a;
+
+    /* ─────────────────────────────
+       OUTLINES / UTILS
+       ───────────────────────────── */
+    outline:                     #ff2a6d;
+    outline-variant:             #3f444a;
+    shadow:                      #000000;
+    scrim:                       #000000;
+
+    inverse-surface:             #f2e6e6;
+    inverse-on-surface:          #202326;
+    inverse-primary:             #ff5c8a;
+}
+
+* {
+    background:            @surface;
+    foreground:            @on-surface;
+
+    selected:              @primary-container;
+    selected-foreground:   @on-primary-container;
+
+    input-background:      @surface-container;
+    input-foreground:      @on-surface;
+
+    border-color:          @outline;
+}
+
+
+
+configuration {
+	modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               " ";
+	drun-display-format:        "{name}";
+}
+
+/*
+└── window 
+    └── mainbox
+        ├── inputbar
+        │   ├── prompt
+        │   └── entry
+        └── listview
+            └── elements
+*/
+
+window {
+    width:                       1000px;
+    height:                      575px;
+    border:                      0px;
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            @background;
+}
+
+
+mainbox {
+    spacing:                     10px;
+    padding:                     10px;
+    border:                      2px;
+    border-radius:               12px 12px 12px 12px;
+    border-color:                @selected;
+    background-color:            @background;
+    children:                    ["listview" ];
+}
+
+listview {
+    columns:                     5;
+    lines:                       3;
+    scrollbar:                   false;
+    layout:                      vertical;
+    border:                      0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element {
+    spacing:                     6px;
+    padding:                     4px;
+    border:                      0px;
+    border-radius:               10px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    orientation:                 vertical;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @on-surface-variant;
+}
+
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color: @primary-container;
+    text-color:       @on-primary-container;
+}
+
+element-icon {
+    size:             140px;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-text {
+    background-color:            transparent;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    padding: 0px;
+    margin: 0px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+}

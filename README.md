@@ -33,8 +33,9 @@ Em seguida, use o GNU stow para criar links simbólicos.
 
 ## TO-DO - Pontos para melhorar e ajustar nos meus dotfiles
 
-- [] Ajustar cor de alerta da waybar para um próximo do amarelo
-- [] Melhorar cores e layout do Rofi
-- [] Ajustar icone zen browser no Rofi
+- [x] Ajustar cor de alerta da waybar para um próximo do amarelo
+- [x] Melhorar cores e layout do Rofi - laucher de apps
+- [x] Criar seletor mais estiloso para wallpapers
 - [] Melhorar transparência e adicionar blur no swaync
-- [] Criar seletor mais estiloso para wallpapers
+- [] Visualizador no Roki das keybinds
+- [] Ajustar icone zen browser no Rofi
