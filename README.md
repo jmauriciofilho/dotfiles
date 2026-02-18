@@ -37,4 +37,4 @@ Em seguida, use o GNU stow para criar links simbólicos.
 - [x] Melhorar cores e layout do Rofi - laucher de apps
 - [x] Criar seletor mais estiloso para wallpapers
 - [] Visualizador no Roki das keybinds
-- [] Ajustar icone zen browser no Rofi
+- [] Melhorar player de musica da waybar
