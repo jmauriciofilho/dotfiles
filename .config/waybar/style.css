@@ -5,8 +5,8 @@
   min-height: 0;
   min-width: 0;
   font-family: Lexend, "JetBrainsMono Nerd Font";
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /* Background geral */
@@ -23,7 +23,8 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 13px;
   border-radius: 4px;
   color: #e6e6e6;
 }
@@ -50,8 +51,8 @@ window#waybar {
    ───────────────────────────── */
 #custom-search_bar {
   color: #ff5c8a;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
   padding-right: 13px;
@@ -62,8 +63,8 @@ window#waybar {
    ───────────────────────────── */
 #window {
   color: #f2e6e6;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
@@ -77,8 +78,8 @@ window#waybar.empty #window {
    ───────────────────────────── */
 #mpris {
   color: #ff4d8d;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
@@ -88,8 +89,8 @@ window#waybar.empty #window {
    ───────────────────────────── */
 #clock {
   color: #c77dff;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;  
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
   font-weight: bold;
@@ -122,8 +123,8 @@ window#waybar.empty #window {
    ───────────────────────────── */
 #pulseaudio {
   color: #f9c74f;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
   font-weight: bold;
@@ -137,8 +138,8 @@ window#waybar.empty #window {
    Tray
    ───────────────────────────── */
 #tray {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
 }
@@ -149,8 +150,8 @@ window#waybar.empty #window {
 #custom-notification {
   color: #e0aaff;
   font-family: "JetBrainsMono Nerd Font";
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;  
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
   padding-right: 10px;
@@ -161,8 +162,8 @@ window#waybar.empty #window {
    ───────────────────────────── */
 #custom-power {
   color: #ff1f5b;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.55rem;
+  margin: 0.3rem 0.2rem;
   border-radius: 4px;
   background-color: rgba(40, 42, 54, 0.90);
   padding-right: 10px;
@@ -175,4 +176,11 @@ tooltip {
   background-color: rgba(40, 42, 54, 0.95);
   border: 2px solid #ff2a6d;
   color: #f2e6e6;
+}
+
+#pulseaudio,
+#custom-notification,
+#custom-power,
+#mpris {
+  font-size: 14px;
 }

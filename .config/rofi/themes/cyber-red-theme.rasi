@@ -91,6 +91,7 @@ configuration {
     display-drun:               " ";
 	drun-display-format:        "{name}";
     icon-theme:                 "Papirus-Dark";
+    font:                       "JetBrainsMono Nerd Font 10.5";
 }
 
 /*

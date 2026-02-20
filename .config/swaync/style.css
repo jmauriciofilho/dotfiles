@@ -31,7 +31,7 @@
 * {
     outline: none;
     font-family: "Iosevka Nerd Font", monospace;
-    font-size: 18px;
+    font-size: 13px;
     text-shadow: none;
     color: var(--fg-primary);
 }
@@ -76,21 +76,27 @@
 
 /* Notification Content */
 .notification-content {
-    padding: 15px 10px 10px 20px;
+    padding: 8px 8px 8px 12px;
     border-radius: 4px;
 }
 
 /* Text Elements */
-.summary {
-    font-size: 1.1rem;
+.summary { 
+    font-size: 14px; 
+    font-weight: 600;
 }
 
-.time {
-    font-size: 0.8rem;
+.body { 
+    font-size: 13px; 
 }
 
-.body {
-    font-size: 1rem;
+.time { 
+    font-size: 11px; 
+    opacity: 0.75;
+}
+
+button {
+    font-size: 15px;
 }
 
 /* Notification Actions */
@@ -185,21 +191,28 @@ tooltip {
    BUTTONS GRID WIDGET - Quick action buttons
 ======================================================================== */
 .widget-buttons-grid {
-    font-size: 1rem;
-    padding: 20px 20px ;
-    margin: unset;
+    font-size: 12px;
+    padding: 6px 6px;
+    margin: 0;
+}
+
+.widget-buttons-grid > flowbox {
+    row-spacing: 6px;
+    column-spacing: 6px;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
     background: var(--bg-tertiary);
     border: 1px solid var(--accent-green);
-    box-shadow: 0px 0px 10px var(--bg-primary);
-    border-radius: 4px;
-    min-width: 60px;
-    min-height: 30px;
-    padding: 7px;
-    margin: 0 3px 0;
-    transition: all .5s ease;
+    border-radius: 6px;
+
+    min-width: 42px;
+    min-height: 26px;
+
+    padding: 4px;
+    margin: 0;
+
+    transition: all .2s ease;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
@@ -269,8 +282,8 @@ tooltip {
 ======================================================================== */
 .widget-volume {
     margin: unset;
-    padding: 20px 15px 15px 0px;
-    font-size: 1.3rem;
+    padding: 8px 10px 8px 0px;
+    font-size: 11px;
 }
 
 .widget-volume > box > button {
@@ -310,7 +323,7 @@ tooltip {
 .widget-dnd {
     font-weight: bold;
     margin: unset;
-    padding: 20px 15px 15px 15px;
+    padding: 8px 10px;
 }
 
 .widget-dnd > switch {
@@ -344,7 +357,7 @@ tooltip {
 }
 
 .widget-title > label {
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 .widget-title > button {
