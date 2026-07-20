@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ssh="kitty +kitten ssh"
 
 # Config for nvm
 export NVM_DIR="$HOME/.nvm"
@@ -114,6 +115,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Execute fastfetch 
-fastfetch
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+  fastfetch
+fi
+
 export PATH="/home/mauricio/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/mauricio/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+# Added by Antigravity CLI installer
+export PATH="/home/mauricio/.local/bin:$PATH"
+
+# Added by LM Studio CLI tool (lms)
+export PATH="$PATH:/home/mauricio/.lmstudio/bin"
