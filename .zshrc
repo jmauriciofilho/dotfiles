@@ -127,3 +127,4 @@ export PATH="/home/mauricio/.local/bin:$PATH"
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/mauricio/.lmstudio/bin"
+export PATH="$HOME/development/flutter/bin:$PATH"

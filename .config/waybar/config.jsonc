@@ -17,6 +17,7 @@
   ],
   "layer": "bottom",
   "position": "top",
+  "output": "DP-3",
   "height": 34,
   "margin-top": 4,
   "margin-left": 8,
